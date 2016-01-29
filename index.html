@@ -16,8 +16,48 @@
 		<!-- Replace favicon.ico & apple-touch-icon.png in the root of your domain and delete these references -->
 	</head>
 
-	<body>
-		hi
-		
+	<script type="text/javascript">
+	var ran=0;
+	var rangeA=0;
+	var rangeB=100;
+	while(!((ran>0)&&(ran<100)))
+		ran= parseInt(100*Math.random());
+	</script>
+ 	<body> 
+		<h id="range">0 - 100</h><br>
+		<input type="text" name="textbox1" id="textbox1" />
+		<input type="submit" name="button" id="button1" onclick="myfunction()" value="go" />
+		<br/>
+
+		<p1 id="yours"></p1>
+		<hr>
+		<p id="ans"><p>
 	</body>
 </html>
+
+
+<script type="text/javascript">
+	function myfunction() {
+		
+		var num = document.getElementById("textbox1").value;
+		var yours; 
+	
+		if( (ran>parseInt(num)) && (parseInt(num)>0) )
+			yours=rangeA=parseInt(num);	
+		
+		else if( (ran<parseInt(num)) && (parseInt(num)<100) )
+			yours=rangeB=parseInt(num);
+	
+		else if(ran==parseInt(num))
+			yours = "bingo";
+	
+		else
+			yours = "please enter a valid number.";
+	
+		document.getElementById("yours").innerHTML = yours;
+		document.getElementById("ans").innerHTML = "Answer is: "+ ran;
+		document.getElementById("range").innerHTML = rangeA + " - " + rangeB;
+	
+		//textbox3.value=answer;
+ 	} 
+</script>
