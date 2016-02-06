@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+
+		<!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame
+		Remove this if you use the .htaccess -->
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+		<title>DnA Homepage</title>
+
+		<meta name="viewport" content="width=device-width; initial-scale=1.0">
+		<link href = "css/bootstrap.min.css" rel = "stylesheet">
+		<link href = "css/styles.css" rel = "stylesheet">
+
+		<script src = "http://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+		<!-- Optional theme -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+
+		<!-- Latest compiled and minified JavaScript -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+
+		<script src="js/main.js"></script>
+
+		<!-- Replace favicon.ico & apple-touch-icon.png in the root of your domain and delete these references -->
+
+	</head>
+	<style>
+		.centerBox {
+			margin-top: 20%;
+			max-height: 400px;
+			padding: 20px;
+			border: 1px solid #000000;
+			border-radius: 5px;
+			box-shadow: 4px 4px 5px #333333;
+		}
+		.loginTitle {
+			width: 100%;
+			text-align: center;
+			font-size: 30px;
+			font-weight: bold;
+		}
+	</style>
+
+	<body>
+
+		<script src = "http://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+
+		<nav class="navbar navbar-inverse">
+			<div class="container-fluid">
+				<div class="navbar-header">
+					<a class="navbar-brand" href="#">DnA Homepage</a>
+					<button type ="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navHeaderCollapse" aria-expanded="false">
+
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+				</div>
+
+				<div class="collapse navbar-collapse" id="navHeaderCollapse">
+					<ul class="nav navbar-nav navbar-right">
+						<li>
+							<a href="index.html">Home</a>
+						</li>
+						<li class="active">
+							<a href="login.html">Login</a>
+						</li>
+						<li>
+							<a href="#">Project</a>
+						</li>
+						<li>
+							<a href="#">About us</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+
+		<div class="container">
+			<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 col-lg-offset-4 col-md-offset-4 col-sm-offset-3 centerBox">
+				<div class="loginTitle">
+					LOGIN
+				</div>
+				<form id="loginForm">
+					<fieldset class="form-group">
+						<label for="acID">Email address</label>
+						<input type="text" class="form-control" id="acID" placeholder="LOGIN NAME">
+					</fieldset>
+					<fieldset class="form-group">
+						<label for="pw">Email address</label>
+						<input type="password" class="form-control" id="pw" placeholder="PASSCODE">
+					</fieldset>
+					<button type="button" onclick="startLogin()" class="btn btn-primary pull-right">
+						Login
+					</button>
+				</form>
+			</div>
+		</div>
+
+	</body>
+	<script>
+		$(document).ready(function() {
+			$(document).ready(function() {
+				$('.bModal').remove();
+				$('#visas_style_div').remove();
+			});
+			$(".form-control").keyup(function(e) {
+				if (e.keyCode == 13) {
+					startLogin();
+				}
+			});
+		});
+
+		function startLogin() {
+			var ac = $('#acID').val();
+			var pw = $('#pw').val();
+			alert("The user id is "+ac+"\n The password is "+pw);
+		}
+	</script>
+</html>
