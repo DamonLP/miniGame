@@ -5,11 +5,12 @@
 	background: url(willis.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
+	background-position: center top; 
 	padding-top: 12px;
 	text-align: right;
 }
 
-#nav_wrapper{
+.nav_wrapper{
 	height: 50px;
 	margin-top: 30px;
 	background: #6D4C41;
@@ -23,19 +24,19 @@
 	padding: 0px 11px;
 }
 
-#nav_wrapper ul li {
+.nav_wrapper ul li {
 	list-style: none;
 	display: inline;
 	font-weight: bold;
 	padding: 16px 11px;
 }
 
-#nav_wrapper ul li:hover{
+.nav_wrapper ul li:hover{
 	background: #4E342E;
 	transition:all 0.45s;
 }
 
-#nav_wrapper a{
+.nav_wrapper a{
 	color: white;
 	text-decoration: none;
 }
@@ -51,3 +52,37 @@
 	font-weight: bold;
 	color: #CFD8DC;
 }
+
+
+.nav_bar{
+	height: 70px;
+	margin-top: 40px;
+	background: #6D4C41;
+	padding: 10px 50px;
+	opacity: 0.7;
+	filter:alpha (opacity=70);
+	font-weight: bold;
+	
+}
+
+.nav_bar a{
+	color: white;
+	text-decoration: none;
+	
+}
+.nav_bar button{
+	background: white;
+}
+
+.nav_bar span{
+	background: #6D4C41;
+	color: #6D4C41;
+}
+
+.nav_bar_tran ul li a:hover {
+	color: white;
+	text-decoration: none;
+	background: #4E342E;
+	transition:all 0.45s;
+}
+
