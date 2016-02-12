@@ -70,13 +70,12 @@
 	text-decoration: none;
 	
 }
-.nav_bar button{
+.nav_bar button:active{
 	background: white;
 }
 
 .nav_bar span{
-	background: #6D4C41;
-	color: #6D4C41;
+	background: white;
 }
 
 .nav_bar_tran ul li a:hover {
