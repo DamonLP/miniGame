@@ -79,10 +79,20 @@
 	background: white;
 }
 
-.nav_bar_tran ul li a:hover {
+.nav_bar ul li {
+	background: #6D4C41;
+}
+
+.nav_bar ul li a:hover {
 	color: white;
 	text-decoration: none;
 	background: #4E342E;
 	transition:all 0.45s;
 }
 
+.content_background{
+	background: #80CBC4;
+	margin: 10px 0px;
+	border-radius: 10px;
+	padding-top: 100px;
+}
