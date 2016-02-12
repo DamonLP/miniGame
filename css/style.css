@@ -70,8 +70,9 @@
 	text-decoration: none;
 	
 }
-.nav_bar button:active{
-	background: white;
+.nav_bar button:active {
+  background-color: #4E342E; 
+  border-color: gray;
 }
 
 .nav_bar span{
