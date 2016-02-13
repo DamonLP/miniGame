@@ -59,7 +59,7 @@
 	margin-top: 40px;
 	background: #6D4C41;
 	padding: 10px 50px;
-	opacity: 0.7;
+	opacity: 0.8;
 	filter:alpha (opacity=70);
 	font-weight: bold;
 	
@@ -90,9 +90,18 @@
 	transition:all 0.45s;
 }
 
+.drop_background{
+	background: #6D4C41;
+}
 .content_background{
-	background: #80CBC4;
-	margin: 10px 0px;
+	background: #8BC34A;
+	margin: 0px 0px;
 	border-radius: 10px;
 	padding-top: 100px;
+	color: white;
+}
+
+.web_background{
+	background:#FFF59D;
+	padding: 10px 0px;
 }
