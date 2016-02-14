@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<meta charset="utf-8">
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
 		<!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame
 		Remove this if you use the .htaccess -->
@@ -86,18 +86,19 @@
 				<div class="loginTitle">
 					LOGIN
 				</div>
-				<form id="loginForm">
+				<form id="loginForm" name="loginForm" method="post" action="connect.php">
 					<fieldset class="form-group">
 						<label for="acID">Email address</label>
-						<input type="text" class="form-control" id="acID" placeholder="LOGIN NAME">
+						<input type="text" class="form-control" id="acID" name="acID" placeholder="LOGIN NAME">
 					</fieldset>
 					<fieldset class="form-group">
-						<label for="pw">Email address</label>
-						<input type="password" class="form-control" id="pw" placeholder="PASSCODE">
+						<label for="pw">Password</label>
+						<input type="password" class="form-control" id="pw" name="pw" placeholder="PASSCODE">
 					</fieldset>
-					<button type="button" onclick="startLogin()" class="btn btn-primary pull-right">
+					<input type="submit" name="button" value="Login"/>&nbsp;&nbsp;
+					<!--<button type="button" onclick="startLogin()" class="btn btn-primary pull-right">
 						Login
-					</button>
+					</button>-->
 				</form>
 			</div>
 		</div>
